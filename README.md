@@ -30,3 +30,15 @@ Run the webpack server using the following command:
 ```
 webpack-dev-server
 ```
+
+### Useful commands
+
+To run the webpack with different configuration file, use the following command :
+
+```
+webpack --config webpack-production.config.js -p
+```
+
+In the above command -p is used for minification of the output file.
+
+
