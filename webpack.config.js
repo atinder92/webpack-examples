@@ -16,19 +16,15 @@ module.exports = {
     module : {
         rules:[
             {
-            test    :/\.js$/,
-            exclude :/node_modules/,
-            enforce: "pre",
-            loader  :'jshint-loader'
+            test    : /\.css$/,
+            exclude : /node_modules/,
+            use     : ["style-loader","css-loader"]
 
-             }
-        ],
-        rules:[
+            },
             {
-                test    : /\.js$/,
-                exclude : /node_modules/,
-                loader  : "babel-loader"
-
+            test    : /\.less$/,
+            exclude : /node_modules/,
+            use     : ["style-loader","css-loader","less-loader"]
             }
         ]
 
